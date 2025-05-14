@@ -4,11 +4,19 @@ public class seatingChart {
 
 
     public static void seatingRows() {
-        String[] rows = new String[26];
-        for (char i = 'A' ; i <= 'Z' ; i++) {
-            Arrays.fill(rows, i);
+        String[][] seats = new String[26][42];
+        for (char row = 'A' ; row <= 'Z' ; row++) {
+            if (row > 'A') {
+                System.out.println();
+            }
+            for (int col = 1; col <= 42; col++) {
+                seats[row-'A'][col-1] = row + String.valueOf(col);
+                System.out.print(row + String.valueOf(col) + " ");
+            }
         }
-        System.out.println(Arrays.toString(rows));
-        return;
+    }
+
+    public static void main(String[] args) {
+        seatingRows();
     }
 }
