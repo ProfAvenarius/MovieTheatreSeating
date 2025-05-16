@@ -2,16 +2,16 @@
 
 public class SeatingChart {
 
-    public static void seatingRows() {
-        String[][] seats = new String[26][30];
+    public static String[][] seatingRows() {
+        String[][] seats = new String[26][21];
         System.out.println(Colours.YELLOW);
         for (char row = 'A' ; row <= 'Z' ; row++) {
             if (row > 'A') {
 
                 System.out.println();
             }
-            for (int col = 1; col <= 30; col++) {
-                seats[row-'A'][col-1] = row + String.valueOf(col);
+            for (int col = 10; col <= 30; col++) {
+                seats[row-'A'][col-10] = row + String.valueOf(col);
 
                 System.out.print(row + String.valueOf(col) + " ");
 
@@ -21,5 +21,7 @@ public class SeatingChart {
         System.out.println();
         System.out.println();
         System.out.println();
+
+        return seats;
     }
 }

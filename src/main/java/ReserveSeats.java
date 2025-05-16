@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class ReserveSeats {
     private static ArrayList<String> reservedSeats = new ArrayList<String>();
+
     public static void reserveSeats() {
         Scanner scanner = new Scanner(System.in);
         int numSeats;
@@ -18,11 +19,16 @@ public class ReserveSeats {
             reservedSeats.add(seat);
         }
 
-        System.out.println(reservedSeats);
-
-
-
+        System.out.println("Reserved seats: " + reservedSeats);
     }
+
+    public static ArrayList<String> getReservedSeats() {
+        return reservedSeats;
+    }
+
+
+
+
 
 }
 
