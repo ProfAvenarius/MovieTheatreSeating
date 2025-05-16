@@ -4,6 +4,11 @@ import java.util.Scanner;
 public class ReserveSeats {
     private static ArrayList<String> reservedSeats = new ArrayList<String>();
 
+    static { //Initializer block. Wanted this to run once, run first and run automatically.
+        ArrayList<String> randomSeats = RandomSeatCreator.createRandomSeats();
+        reservedSeats.addAll(randomSeats);// Initialize with random seats
+    }
+
     public static void reserveSeats() {
         Scanner scanner = new Scanner(System.in);
         int numSeats;
