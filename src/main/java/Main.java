@@ -29,7 +29,7 @@ public class Main {
 
                     break;
                 case 4:
-
+                    ReserveSeats.reserveSeats();
                     break;
                 case 5:
 
@@ -41,5 +41,6 @@ public class Main {
                     System.out.println("Invalid choice! Please select a valid option.");
             }
         }while(choice != 6);
+        scanner.close();
     }
 }
