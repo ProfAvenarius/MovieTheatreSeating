@@ -1,3 +1,10 @@
+//Description: A Java program that creates a seating plan for a theatre that allows for seats to be
+// reserved and canceled, all to explore arrays and arrayLists.An assignment for Datastructures & Algorithms.
+//Author: DC Elliott SD-12
+//Date: 05/18/2025
+
+
+
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -10,8 +17,8 @@ public class Main {
         int choice;
         do {
             System.out.println("|=== Theatre Seating System Menu ===|");
-            System.out.println("    1. View Full Seating Chart.");
-            System.out.println("    2. View Available Seats Only.");
+            System.out.println("    1. View Full Seating Chart."); // Full seating plan w/o reservations
+            System.out.println("    2. View Available Seats Only."); // Colour coded reservations
             System.out.println("    3. Reserve Seats.");
             System.out.println("    4. Cancel Seats.");
             System.out.println("    5. Exit");
@@ -30,7 +37,7 @@ public class Main {
                     ReserveSeats.reserveSeats();
                     break;
                 case 4:
-
+                    ReserveSeats.cancelSeats();
                     break;
                 case 5:
                     System.out.println("Thank you for using the Theatre Seating System. Goodbye!");

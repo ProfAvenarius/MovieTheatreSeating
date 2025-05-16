@@ -3,6 +3,9 @@
 public class SeatingChart {
 
     public static String[][] seatingRows() {
+        System.out.println(Colours.CYAN);
+        System.out.println("                       |===THE ARRAY THEATRE SEATING CHART===|                  ");
+//        System.out.println(Colours.YELLOW);
         String[][] seats = new String[26][21];
         System.out.println(Colours.YELLOW);
         for (char row = 'A' ; row <= 'Z' ; row++) {
