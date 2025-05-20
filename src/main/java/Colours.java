@@ -1,3 +1,5 @@
+// Wanted to use colours for effect, obtained this list from Stack Overflow.
+
 public class Colours {
     public static final String RESET = "\u001B[0m";
     public static final String RED = "\u001B[31m";

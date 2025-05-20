@@ -1,4 +1,5 @@
-
+//First class coded, somewhat redundant now with AvailableSeats class as well, but this
+// is where the "Array Theatre" was first built.
 
 public class SeatingChart {
 
@@ -18,7 +19,7 @@ public class SeatingChart {
 
                 System.out.print(row + String.valueOf(col) + " ");
 
-            }
+            }//started col nums at 10 to keep all seats 3 digits.
         }
         System.out.println(Colours.RESET);
         System.out.println();

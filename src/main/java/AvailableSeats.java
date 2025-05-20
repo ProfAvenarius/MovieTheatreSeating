@@ -3,9 +3,8 @@ import java.util.ArrayList;
 
 public class AvailableSeats {
     public static void displayAvailableSeats(ArrayList<String> reservedSeats) {
-//        String[][] allseats = SeatingChart.seatingRows();
-
-        System.out.println("Available seats: ");
+        System.out.println(Colours.CYAN);
+        System.out.println("                       |===THE ARRAY THEATRE AVAILABLE SEATS===|                  ");
         System.out.println(Colours.GREEN);
 
         for(char row = 'A'; row <= 'Z'; row++) {
